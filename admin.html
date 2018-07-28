@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tITle>
+		Admin - SNS Feedback System
+	</tITle>
+</head>
+<body>
+	<h3>Add Staff</h3><br>
+	<form action="addstaff.php" method="POST">
+		<table>
+			<tr>
+				<td>
+					Staff ID
+				</td>
+				<td>
+					<input type="text" name="stid">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Staff Name
+				</td>
+				<td>
+					<input type="text" name="stname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Department
+				</td>
+				<td>
+					<select name="stdept">
+			<option value="Agri">Agri</option>
+			<option value="Aero">Aero</option>
+			<option value="Auto">Auto</option>
+			<option value="ECE">ECE</option>
+			<option value="EEE">EEE</option>
+			<option value="EIE">EIE</option>
+			<option value="CSE">CSE</option>
+			<option value="IT">IT</option>
+			<option value="Mech">Mech</option>
+			<option value="MCT">MCT</option>
+			<option value="MAA">MechAndAuto</option>
+			</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Subject Handling
+				</td>
+			</tr>
+			<tr>
+				<td>Semester</td>
+				<td>
+			<select name="stsem">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			</select>
+		</td>
+			</tr>
+			<tr>
+				<td>Subject Code</td>
+				<td><input type="text" name="stsubcode"></td>
+			</tr>
+			<tr>
+				<td>Section</td>
+				<td>
+					<select name="stsection">
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="ABC">Staff Elective</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<input type="submit" name="submit" value="Add">
+	</form>
+	<hr>
+	<h3>Add Subject</h3><br>
+	<form action="addsubject.php" method="POST">
+		<table>
+			<tr>
+				<td>
+					Subject Code
+				</td>
+				<td>
+					<input type="text" name="subcode">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Subject Name
+				</td>
+				<td>
+					<input type="text" name="subname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Department
+				</td>
+				<td>
+					<select name="subdept">
+			<option value="Agri">Agri</option>
+			<option value="Aero">Aero</option>
+			<option value="Auto">Auto</option>
+			<option value="ECE">ECE</option>
+			<option value="EEE">EEE</option>
+			<option value="EIE">EIE</option>
+			<option value="CSE">CSE</option>
+			<option value="IT">IT</option>
+			<option value="Mech">Mech</option>
+			<option value="MCT">MCT</option>
+			<option value="MAA">MechAndAuto</option>
+			</select>
+				</td>
+			</tr>
+			<td>Year</td>
+		<td>
+			<select name="subyear">
+			<option value="1">I</option>
+			<option value="2">II</option>
+			<option value="3">III</option>
+			<option value="4">IV</option>
+			</select>
+		</td>
+		</tr>
+		<td>Semester</td>
+		<td>
+			<select name="subsem">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			</select>
+		</td>
+		</tr>
+		<tr>
+			<td>Theory or Laboratory</td>
+			<td>
+			<select name="subtype">
+			<option value="Laboratory">Laboratory</option>
+			<option value="Theory">Theory</option>
+			</select>
+		</td>	
+		</tr>
+		<tr>
+			<td>Type of Elective</td>
+		<td>
+			<select name="subelective">
+			<option value="Not Elective">Not an Elective</option>
+			<option value="Staff Elective">Staff Elective</option>
+			<option value="Elective I">Elective I</option>
+			<option value="Elective II">Elective II</option>
+			<option value="Open Elective">Open Elective</option>
+			</select>
+		</td>
+		</tr>
+		</table>
+		<input type="submit" name="submit" value="Add">
+	</form>
+	<hr>
+</body>
+</html>
+

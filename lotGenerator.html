@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SNS Feedback System</title>
+</head>
+<body>
+<div>
+	<form action="lotGenerator.php" method="POST">
+	<table>
+		<tr>
+		<td>Year</td>
+		<td>
+			<select name="year">
+			<option value="1">I</option>
+			<option value="2">II</option>
+			<option value="3">III</option>
+			<option value="4">IV</option>
+			</select>
+		</td>
+		</tr>
+		<tr>
+		<td>Department</td>
+		<td>
+			<select name="dept">
+			<option value="01">Agri</option>
+			<option value="02">Aero</option>
+			<option value="03">Auto</option>
+			<option value="04">ECE</option>
+			<option value="05">EEE</option>
+			<option value="06">EIE</option>
+			<option value="07">CSE</option>
+			<option value="08">IT</option>
+			<option value="09">Mech</option>
+			<option value="10">MCT</option>
+			<option value="11">MechAndAuto</option>
+			</select>
+		</td>
+		</tr>
+		<tr>
+			<td>Class</td>
+			<td><select name="class">
+				<option value="1">A</option>
+				<option value="2">B</option>
+				<option value="3">C</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Semester</td>
+			<td><select name="sem">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Number of students</td>
+			<td><input type="number" name="nostu"></td>
+		</tr>
+		<tr><td><input type="submit" name="Submit" value="Next" required></td></tr>
+	</table>
+</form>
+</div>
+</body>
+</html>
